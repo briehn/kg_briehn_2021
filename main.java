@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Scanner;
 /**
  *
  * @author briehn
@@ -25,10 +26,12 @@ public class main {
     }
 
     public static void main(String[] args) {
-        String s1 = "abc";
-        String s2 = "bcd";
+        Scanner in = new Scanner(System.in);
+        System.out.println("What is the first string?");
+        String s1 = in.nextLine();
+        System.out.println("What is the second string?");
+        String s2 = in.nextLine();
         map(s1, s2);
-        map(s2, s1);
     }
     
 }
